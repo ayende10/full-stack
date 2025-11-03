@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page para Entidad Sin Fines de Lucro</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Fuente Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-primario: #4e54c8;
+      --color-secundario: #ff6347;
+      --color-fondo: #f5f5f5;
+      --color-footer: #000dff;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--color-fondo);
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #000dff 100%);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      position: relative;
+    }
+    section h2::after {
+      content: "";
+      width: 60px;
+      height: 4px;
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    #acerca-de h2::after,
+    #testimonios h2::after,
+    #suscripcion h2::after {
+      background-color: var(--color-primario);
+    }
+    #como-ayudar h2::after,
+    #galeria h2::after {
+      background-color: var(--color-secundario);
+    }
+    .ayuda-item {
+      background-color: #f0f4ff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    #testimonios article {
+      background-color: #f0f4ff;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    #galeria img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .btn-enlace {
+      background-color: var(--color-secundario);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    .btn-enlace:hover {
+      background-color: #e5533c;
+    }
+    footer {
+      background-color: var(--color-footer);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1 class="display-5 text-uppercase mb-3">Bienvenidos a Impulso Juvenil</h1>
+    <p class="fs-5 opacity-75">Nuestra misión es empoderar a adolescentes mediante programas de liderazgo, mentoría y formación en valores.</p>
+  </header>
+
+  <section id="acerca-de" class="bg-white">
+    <h2 class="text-primary">Acerca de Nosotros</h2>
+    <p class="mx-auto" style="max-width: 800px;">Impulso Juvenil es una organización sin fines de lucro que forma líderes adolescentes a través de mentoría, talleres y proyectos comunitarios.</p>
+  </section>
+
+  <section id="como-ayudar" class="bg-light">
+    <h2 class="text-danger">Cómo Puedes Ayudar</h2>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-4 ayuda-item">
+        <span class="fs-2">🌱</span>
+        <h3>Participa en Actividades</h3>
+        <p>Únete a nuestras limpiezas de playas, talleres educativos o eventos comunitarios.</p>
+      </div>
+      <div class="col-md-4 ayuda-item">
+        <span class="fs-2">💬</span>
+        <h3>Corre la Voz</h3>
+        <p>Comparte nuestra misión en redes sociales y ayuda a inspirar a otros.</p>
+      </div>
+      <div class="col-md-4 ayuda-item">
+        <span class="fs-2">🎁</span>
+        <h3>Haz una Donación</h3>
+        <p>Contribuye económicamente para apoyar nuestros programas y materiales.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonios">
+    <h2 class="text-primary">Testimonios</h2>
+    <div class="container">
+      <article><p>Impulso Juvenil me ayudó a descubrir que puedo liderar con empatía. – Valeria, 16 años.</p></article>
+      <article><p>Gracias al programa, aprendí a comunicarme mejor y tomar decisiones con seguridad. – Diego, 17 años</p></article>
+      <article><p>Ahora sé que mi voz tiene poder y puedo usarla para inspirar a otros. – Camila, 15 años</p></article>
+    </div>
+  </section>
+
+  <section id="galeria" class="bg-light">
+    <h2 class="text-danger">Galería</h2>
+    <div class="row g-3">
+      <div class="col-md-4"><img src="https://th.bing.com/th/id/R.39ef648146908a33a6ca6e49e7035a06?rik=0%2fmToP%2bagltXZg&riu=http%3a%2f%2ffazendasonhomeu.com.br%2fwp-content%2fuploads%2f2021%2f07%2fsite-fsm-e-vivendo-7.jpg&ehk=sAQY7KJwmh9eNDZKUKf5%2bm1Ogr1XmqPKYEpPW3s2MkM%3d&risl=&pid=ImgRaw&r=0" class="img-fluid"></div>
+      <div class="col-md-4"><img src="https://conectate.um.edu.mx/archivos/2022/11/img-2McpQWI4dNwU9Ej7.jpg" class="img-fluid"></div>
+      <div class="col-md-4"><img src="https://farm2.staticflickr.com/1469/25472375122_81ff3c4f8d_o.jpg" class="img-fluid"></div>
+    </div>
+  </section>
+
+  <section id="suscripcion">
+    <h2 class="text-primary">Suscríbete</h2>
+    <a href="suscripcion.html" class="btn-enlace">Ir al formulario</a>
+  </section>
+
+  <footer>
+    <p class="opacity-75 mb-0">Contacto: Pedro Pérez (787) 123-4567</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
